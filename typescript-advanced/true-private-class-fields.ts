@@ -55,3 +55,24 @@ jack.birthday();
 // jack['#age'] = -5; // ts error. Private identifier;
 
 console.log('jack.age', jack.age); // age: 2;
+
+
+// Another way, in a closure:
+function createPerson() {
+	let age = 0; // here's the catch; (not global scope)
+	return {
+		incrementAge() {
+			age += 1;
+		},
+		get getAge() {
+			return age;
+		}
+	}
+}
+
+const bill = createPerson();
+bill.incrementAge();
+bill.incrementAge();
+bill.incrementAge();
+// bill.age = -3; // error Property 'age' does not exist on type '{ incrementAge(): void; readonly getAge: number; }'.(2339)
+console.log("bill.getAge", bill.getAge);

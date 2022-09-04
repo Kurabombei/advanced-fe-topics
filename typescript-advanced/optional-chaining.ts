@@ -19,12 +19,12 @@ type SerializationOptions = {
     return JSON.stringify(value, null, indent);
   }
 
-  const user = {
+  const userTest = {
       name: 'John Volos',
       twitter: 'kurabombei'
   };
 
-  const json = serializeJSON(user, {
+  const json = serializeJSON(userTest, {
       formatting: {
           "indent-level": 5,
       }
