@@ -1,4 +1,17 @@
 // private class fields
+/**
+ * Usage of #field over private _field ->
+ * 1) private can be accessed outside of class with object["_field"] = -5, which is not private at all;
+ * 2) #field does not even show in dropdown menu of fields of object, and is not a valid syntax.
+ *
+ * 2*) #field has a little caveat, it needs to be run in ES2015 and higher.
+ *
+ *
+ * **/
+
+
+
+
 class Person {
 	private _age: number = 0;
 
