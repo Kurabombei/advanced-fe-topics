@@ -5,6 +5,8 @@
  * 2) #field does not even show in dropdown menu of fields of object, and is not a valid syntax.
  *
  * 2*) #field has a little caveat, it needs to be run in ES2015 and higher.
+ * If truly private field should run in ES2015 and lower:
+ * - do it as a closure,
  *
  *
  * **/
