@@ -31,5 +31,5 @@ const ORIGIN_FROZEN = Object.freeze({
 	x: 0,
 	y: 0,
 } as const);
-ORIGIN_FROZEN.x = 2 // TS2540: Cannot assign to 'x' because it is a read-only property.
+// ORIGIN_FROZEN.x = 2 // TS2540: Cannot assign to 'x' because it is a read-only property.
 // now it will fail at runtime, so the immutability of this object is succeeded
