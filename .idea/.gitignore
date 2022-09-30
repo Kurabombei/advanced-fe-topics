@@ -6,3 +6,12 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+# API keys and secrets
+.env
+node_modules/
+#editor's directories
+.idea
+*.iml
+# Ignore built ts files
+/**/*.js
+dist/**/*
