@@ -14,8 +14,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ShellComponent } from './shell/shell.component';
+import {SpinnerModule} from "./spinner/spinner.module";
+import { EyeCatcherComponent } from './eye-catcher/eye-catcher.component';
+import { ContentImageComponent } from './content-image/content-image.component';
+import { ContentQuoteComponent } from './content-quote/content-quote.component';
+import { MainContainerComponent } from './main-container/main-container.component';
 
-const components = [ShellComponent];
+const components = [ShellComponent, EyeCatcherComponent, ContentImageComponent, ContentQuoteComponent, MainContainerComponent];
 
 const modules = [
   CommonModule,
@@ -31,7 +36,8 @@ const modules = [
   MatFormFieldModule,
   MatInputModule,
   MatSnackBarModule,
-  RouterModule
+  RouterModule,
+  SpinnerModule
 ];
 
 @NgModule({

@@ -3,9 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'di-spinner',
   templateUrl: './spinner.component.html',
-  styles: ['./spinner.component.scss']
+  styleUrls: ['./spinner.component.scss']
 })
 export class SpinnerComponent implements OnInit {
+  margin = '16px';
+  fill = '#fff';
 
   constructor() { }
 
