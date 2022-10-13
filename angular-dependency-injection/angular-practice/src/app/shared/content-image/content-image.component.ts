@@ -5,11 +5,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './content-image.component.html',
   styleUrls: ['./content-image.component.scss']
 })
-export class ContentImageComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class ContentImageComponent {
+  constructor() {}
 }

@@ -5,11 +5,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './eye-catcher.component.html',
   styleUrls: ['./eye-catcher.component.scss']
 })
-export class EyeCatcherComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class EyeCatcherComponent {
+  constructor() {}
 }

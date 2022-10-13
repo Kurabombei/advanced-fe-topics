@@ -14,13 +14,19 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ShellComponent } from './shell/shell.component';
-import {SpinnerModule} from "./spinner/spinner.module";
+import { SpinnerModule } from './spinner/spinner.module';
 import { EyeCatcherComponent } from './eye-catcher/eye-catcher.component';
 import { ContentImageComponent } from './content-image/content-image.component';
 import { ContentQuoteComponent } from './content-quote/content-quote.component';
 import { MainContainerComponent } from './main-container/main-container.component';
 
-const components = [ShellComponent, EyeCatcherComponent, ContentImageComponent, ContentQuoteComponent, MainContainerComponent];
+const components = [
+  ShellComponent,
+  EyeCatcherComponent,
+  ContentImageComponent,
+  ContentQuoteComponent,
+  MainContainerComponent
+];
 
 const modules = [
   CommonModule,
@@ -43,9 +49,6 @@ const modules = [
 @NgModule({
   declarations: [...components],
   imports: [...modules],
-  exports: [
-    ...components,
-    ...modules,
-  ]
+  exports: [...components, ...modules]
 })
-export class SharedModule { }
+export class SharedModule {}

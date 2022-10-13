@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
-import {BreakpointObserver, Breakpoints} from "@angular/cdk/layout";
-import {map, Observable, shareReplay} from "rxjs";
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { map, Observable, shareReplay } from 'rxjs';
 
 @Component({
   selector: 'di-shell',
   templateUrl: './shell.component.html',
-  styles: [
-  ]
+  styles: []
 })
 export class ShellComponent {
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe([Breakpoints.Handset])
+  isHandset$: Observable<boolean> = this.breakpointObserver
+    .observe([Breakpoints.Handset])
     .pipe(
-      map(result => result.matches),
+      map((result) => result.matches),
       shareReplay()
     );
 

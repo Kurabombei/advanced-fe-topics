@@ -5,11 +5,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './content-quote.component.html',
   styleUrls: ['./content-quote.component.scss']
 })
-export class ContentQuoteComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class ContentQuoteComponent {
+  constructor() {}
 }

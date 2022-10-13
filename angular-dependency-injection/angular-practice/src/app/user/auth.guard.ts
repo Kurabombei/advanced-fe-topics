@@ -1,6 +1,10 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot } from '@angular/router';
-import {NotificationService} from "../services/notification.service";
+import {
+  ActivatedRouteSnapshot,
+  CanActivate,
+  RouterStateSnapshot
+} from '@angular/router';
+import { NotificationService } from '../services/notification.service';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +15,10 @@ export class AuthGuard implements CanActivate {
     private snack: NotificationService
   ) {}
 
-  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): | Promise<boolean> | boolean {
+  canActivate(
+    route: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot
+  ): Promise<boolean> | boolean {
     return false;
   }
 
